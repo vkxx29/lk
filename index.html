@@ -96,6 +96,12 @@
             cursor: not-allowed;
         }
         
+        h1 {
+            color: #f6f5f5;
+            font-size: 48px;
+            line-height: 1.2;
+        }
+        
         h2 {
             color: #e71d36;
             font-size: 24px;
@@ -109,6 +115,66 @@
             opacity: 0.7;
             font-size: 14px;
             margin-bottom: 20px;
+        }
+        
+        /* Титульный слайд */
+        .title-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .title-slide h1 {
+            margin-bottom: 20px;
+        }
+        
+        .title-slide .subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .title-slide .author {
+            color: #f6f5f5;
+            opacity: 0.5;
+            font-size: 14px;
+        }
+        
+        .title-decoration {
+            width: 100px;
+            height: 4px;
+            background: #e71d36;
+            margin: 30px auto;
+        }
+        
+        /* Финальный слайд */
+        .final-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .final-slide h1 {
+            margin-bottom: 30px;
+        }
+        
+        .final-slide p {
+            color: #f6f5f5;
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            margin-top: 40px;
+            padding: 20px 40px;
+            background: rgba(246, 245, 245, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(231, 29, 54, 0.3);
+        }
+        
+        .contact-info p {
+            font-size: 14px;
+            margin: 8px 0;
         }
         
         .problem-solution {
@@ -352,6 +418,24 @@
             font-size: 14px;
         }
         
+        .highlight-center {
+            background: rgba(231, 29, 54, 0.15);
+            border: 1px solid rgba(231, 29, 54, 0.4);
+            padding: 15px 25px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .highlight-center strong {
+            color: #e71d36;
+        }
+        
+        .highlight-center span {
+            color: #f6f5f5;
+            font-size: 15px;
+        }
+        
         .comparison-column {
             background: rgba(246, 245, 245, 0.05);
             padding: 20px;
@@ -409,7 +493,7 @@
     </div>
     
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">6</span>
+        <span id="current-slide">1</span> / <span id="total-slides">8</span>
     </div>
 
     <div class="navigation">
@@ -419,8 +503,20 @@
 
     <div class="slide-container">
         
-        <!-- СЛАЙД 1: Executive Summary -->
-        <div class="slide active">
+        <!-- СЛАЙД 1: Титульный -->
+        <div class="slide title-slide active">
+            <h1>Личный кабинет</h1>
+            <div class="title-decoration"></div>
+            <p class="subtitle">Единая цифровая точка контакта с клиентом</p>
+            <div class="author">
+                <p>Департамент продуктового развития</p>
+                <p style="margin-top: 10px; opacity: 0.7;">2024</p>
+            </div>
+            <div class="slide-number">Слайд 1</div>
+        </div>
+
+        <!-- СЛАЙД 2: Executive Summary -->
+        <div class="slide">
             <h2>Executive Summary</h2>
             <p class="subtitle">Резюме для руководства</p>
             
@@ -444,10 +540,10 @@
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 1</div>
+            <div class="slide-number">Слайд 2</div>
         </div>
 
-        <!-- СЛАЙД 2: Решение -->
+        <!-- СЛАЙД 3: Решение -->
         <div class="slide">
             <h2>Личный кабинет — Единая цифровая точка контакта с клиентом</h2>
             
@@ -457,7 +553,7 @@
                     <p>ЛК — это цифровой <strong style="color: #e71d36;">"гараж"</strong> и <strong style="color: #e71d36;">"консьерж-сервис"</strong> для нашего клиента. Единое окно для всех его потребностей, связанных с автомобилем.</p>
                 </div>
                 
-                <div class="highlight">
+                <div class="highlight-center">
                     <strong>Ключевая идея: </strong><span>Мы перестаем быть просто продавцом и становимся партнером клиента на всем пути владения автомобилем.</span>
                 </div>
                 
@@ -483,10 +579,10 @@
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 2</div>
+            <div class="slide-number">Слайд 3</div>
         </div>
 
-        <!-- СЛАЙД 3: Ценность для БИЗНЕСА -->
+        <!-- СЛАЙД 4: Ценность для БИЗНЕСА -->
         <div class="slide">
             <h2>Ценность для БИЗНЕСА</h2>
             
@@ -525,10 +621,10 @@
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 3</div>
+            <div class="slide-number">Слайд 4</div>
         </div>
 
-        <!-- СЛАЙД 4: Ценность для КЛИЕНТА -->
+        <!-- СЛАЙД 5: Ценность для КЛИЕНТА -->
         <div class="slide">
             <h2>Ценность для КЛИЕНТА</h2>
             <p class="subtitle">Почему клиенты будут пользоваться Личным кабинетом</p>
@@ -571,10 +667,10 @@
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 4</div>
+            <div class="slide-number">Слайд 5</div>
         </div>
 
-        <!-- СЛАЙД 5: Функционал MVP -->
+        <!-- СЛАЙД 6: Функционал MVP -->
         <div class="slide">
             <h2>Функционал MVP</h2>
             
@@ -595,7 +691,7 @@
                     <div class="mvp-number">2</div>
                     <div class="mvp-feature-content">
                         <h4>"Мой гараж"</h4>
-                        <p>Карточка авто (марка, модель, VIN, год, гос. номер). Информация о гарантии.</p>
+                        <p>Карточка авто (марка, модель, VIN, год). Информация о гарантии.</p>
                     </div>
                 </div>
                 
@@ -603,7 +699,7 @@
                     <div class="mvp-number">3</div>
                     <div class="mvp-feature-content">
                         <h4>История обслуживания</h4>
-                        <p>Заказ-наряды (дата, пробег, работы, стоимость). Интеграция с 1С/ERP.</p>
+                        <p>Заказ-наряды (дата, пробег, работы, стоимость). Интеграция с CRM.</p>
                     </div>
                 </div>
                 
@@ -619,15 +715,15 @@
                     <div class="mvp-number">5</div>
                     <div class="mvp-feature-content">
                         <h4>Система уведомлений</h4>
-                        <p>Напоминания о предстоящем ТО. Подтверждение записи на сервис. Push и email.</p>
+                        <p>Напоминания о предстоящем ТО. Подтверждение записи на сервис. Email-уведомления.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 5</div>
+            <div class="slide-number">Слайд 6</div>
         </div>
 
-        <!-- СЛАЙД 6: Бэклог и дорожная карта -->
+        <!-- СЛАЙД 7: Бэклог и дорожная карта -->
         <div class="slide">
             <h2>Бэклог и дорожная карта продукта</h2>
             <p class="subtitle">Roadmap на 3 квартала после запуска MVP</p>
@@ -638,7 +734,6 @@
                     <ul>
                         <li><strong>Онлайн-оплата</strong> услуг и запчастей</li>
                         <li><strong>Трекинг статуса</strong> ремонта в реальном времени</li>
-                        <li><strong>Push-уведомления</strong> в мобильном приложении</li>
                     </ul>
                 </div>
                 
@@ -648,6 +743,7 @@
                         <li><strong>Каталог аксессуаров</strong> с онлайн-заказом</li>
                         <li>Программы <strong>лояльности</strong> (бонусы, скидки)</li>
                         <li>Калькулятор <strong>Trade-in</strong></li>
+                        <li><strong>Push-уведомления</strong> в мобильном приложении</li>
                     </ul>
                 </div>
                 
@@ -661,7 +757,21 @@
                 </div>
             </div>
             
-            <div class="slide-number">Слайд 6</div>
+            <div class="slide-number">Слайд 7</div>
+        </div>
+
+        <!-- СЛАЙД 8: Финальный -->
+        <div class="slide final-slide">
+            <h1>Спасибо за внимание</h1>
+            <div class="title-decoration"></div>
+            <p>Готовы ответить на ваши вопросы</p>
+            
+            <div class="contact-info">
+                <p><strong style="color: #e71d36;">Департамент продуктового развития</strong></p>
+                <p>Следующий шаг: обсуждение и согласование запуска проекта</p>
+            </div>
+            
+            <div class="slide-number">Слайд 8</div>
         </div>
 
     </div>
