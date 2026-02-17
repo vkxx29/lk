@@ -25,7 +25,7 @@
         
         .slide {
             background: #070a12;
-            padding: 30px 50px;
+            padding: 40px 80px;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -42,31 +42,31 @@
         
         .slide-number {
             position: absolute;
-            bottom: 15px;
-            right: 30px;
+            bottom: 20px;
+            right: 40px;
             color: #f6f5f5;
-            opacity: 0.4;
-            font-size: 12px;
+            opacity: 0.3;
+            font-size: 11px;
         }
         
         .slide-counter {
             position: fixed;
-            bottom: 15px;
-            left: 30px;
+            bottom: 20px;
+            left: 40px;
             color: #f6f5f5;
-            opacity: 0.6;
-            font-size: 12px;
+            opacity: 0.5;
+            font-size: 11px;
             z-index: 1000;
         }
         
         .navigation {
             position: fixed;
-            right: 20px;
+            right: 25px;
             top: 50%;
             transform: translateY(-50%);
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
             z-index: 1000;
         }
         
@@ -74,10 +74,10 @@
             background: #e71d36;
             color: #f6f5f5;
             border: none;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             transition: all 0.3s;
             display: flex;
@@ -98,23 +98,25 @@
         
         h1 {
             color: #f6f5f5;
-            font-size: 42px;
-            line-height: 1.2;
+            font-size: 44px;
+            line-height: 1.15;
+            font-weight: 600;
         }
         
         h2 {
             color: #e71d36;
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 26px;
+            margin-bottom: 25px;
+            font-weight: 600;
             border-bottom: 2px solid #e71d36;
-            padding-bottom: 8px;
+            padding-bottom: 12px;
         }
         
         .subtitle {
             color: #f6f5f5;
-            opacity: 0.7;
+            opacity: 0.6;
             font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .title-slide {
@@ -124,7 +126,7 @@
         }
         
         .title-slide h1 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         .title-slide h1 span {
@@ -132,15 +134,16 @@
         }
         
         .title-slide .subtitle {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 0;
+            opacity: 0.7;
         }
         
         .title-decoration {
-            width: 100px;
-            height: 4px;
+            width: 80px;
+            height: 3px;
             background: #e71d36;
-            margin: 30px auto;
+            margin: 35px auto;
         }
         
         .final-slide {
@@ -150,34 +153,37 @@
         }
         
         .final-slide h1 {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         
         .final-slide p {
             color: #f6f5f5;
             font-size: 18px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
         
         .problem-solution {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
+            gap: 40px;
             flex: 1;
+            align-content: center;
         }
         
         .box {
-            background: rgba(246, 245, 245, 0.05);
-            padding: 20px;
-            border-left: 4px solid #e71d36;
-            border-radius: 5px;
+            background: rgba(246, 245, 245, 0.03);
+            padding: 30px;
+            border-left: 3px solid #e71d36;
+            border-radius: 4px;
         }
         
         .box h3 {
             color: #e71d36;
-            font-size: 16px;
-            margin-bottom: 15px;
+            font-size: 13px;
+            margin-bottom: 20px;
             text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
         }
         
         .box ul {
@@ -186,12 +192,13 @@
         }
         
         .box ul li {
-            padding: 8px 0;
-            padding-left: 20px;
+            padding: 10px 0;
+            padding-left: 22px;
             position: relative;
             line-height: 1.5;
-            font-size: 14px;
+            font-size: 15px;
             color: #f6f5f5;
+            opacity: 0.9;
         }
         
         .box ul li:before {
@@ -199,28 +206,30 @@
             position: absolute;
             left: 0;
             color: #e71d36;
-            font-weight: bold;
+            font-weight: 600;
         }
         
         .benefits-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 20px;
             flex: 1;
+            align-content: center;
         }
         
         .benefit-item {
             background: linear-gradient(135deg, #e71d36 0%, #b8162b 100%);
             color: #f6f5f5;
-            padding: 15px;
+            padding: 22px;
             border-radius: 6px;
         }
         
         .benefit-item h3 {
             color: #f6f5f5;
             margin-top: 0;
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 14px;
+            font-weight: 600;
         }
         
         .benefit-item ul {
@@ -230,143 +239,153 @@
         }
         
         .benefit-item ul li {
-            padding: 4px 0;
-            padding-left: 20px;
+            padding: 5px 0;
+            padding-left: 22px;
             position: relative;
             color: #f6f5f5;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 13px;
+            line-height: 1.5;
+            opacity: 0.95;
         }
         
         .benefit-item ul li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            font-weight: bold;
-            font-size: 12px;
+            font-weight: 600;
         }
         
         .two-column {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
+            gap: 30px;
         }
         
         .timeline-horizontal {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 30px;
             flex: 1;
+            align-content: center;
         }
         
         .timeline-content {
-            background: rgba(246, 245, 245, 0.05);
+            background: rgba(246, 245, 245, 0.03);
             border: 2px solid #e71d36;
-            padding: 15px;
+            padding: 25px;
             border-radius: 6px;
         }
         
         .timeline-quarter {
             background: #e71d36;
             color: #f6f5f5;
-            padding: 4px 12px;
-            border-radius: 15px;
+            padding: 6px 14px;
+            border-radius: 20px;
             display: inline-block;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-weight: 600;
+            margin-bottom: 18px;
             font-size: 12px;
+            letter-spacing: 0.5px;
         }
         
         .timeline-content ul {
             margin: 0;
-            padding-left: 18px;
+            padding-left: 20px;
         }
         
         .timeline-content ul li {
-            margin: 5px 0;
+            margin: 8px 0;
             color: #f6f5f5;
-            font-size: 12px;
-            line-height: 1.3;
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0.9;
         }
         
         .concept-visual {
-            background: rgba(246, 245, 245, 0.05);
+            background: rgba(246, 245, 245, 0.03);
             color: #f6f5f5;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px 30px;
+            border-radius: 6px;
             text-align: center;
-            margin-bottom: 15px;
-            border: 1px solid rgba(231, 29, 54, 0.3);
+            margin-bottom: 20px;
+            border: 1px solid rgba(231, 29, 54, 0.25);
         }
         
         .concept-visual h3 {
             color: #e71d36;
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
         
         .concept-visual p {
-            font-size: 14px;
+            font-size: 15px;
             line-height: 1.6;
+            opacity: 0.9;
         }
         
         .value-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 18px;
             flex: 1;
+            align-content: center;
         }
         
         .value-card {
-            background: rgba(246, 245, 245, 0.05);
+            background: rgba(246, 245, 245, 0.03);
             border: 2px solid #e71d36;
-            padding: 15px;
+            padding: 22px;
             border-radius: 6px;
         }
         
         .value-card h4 {
             color: #e71d36;
             font-size: 14px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
         
         .value-card p {
             color: #f6f5f5;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 13px;
+            line-height: 1.5;
+            opacity: 0.85;
         }
         
         .value-icon {
-            font-size: 24px;
-            margin-bottom: 8px;
+            font-size: 26px;
+            margin-bottom: 12px;
         }
         
         .mvp-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 16px;
             flex: 1;
+            align-content: center;
         }
         
         .mvp-feature {
             display: flex;
             align-items: flex-start;
-            padding: 12px;
-            background: rgba(246, 245, 245, 0.05);
+            padding: 18px;
+            background: rgba(246, 245, 245, 0.03);
             border-radius: 6px;
         }
         
         .mvp-number {
             background: #e71d36;
             color: #f6f5f5;
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            margin-right: 12px;
+            font-weight: 600;
+            margin-right: 14px;
             font-size: 14px;
             flex-shrink: 0;
         }
@@ -374,20 +393,22 @@
         .mvp-feature-content h4 {
             color: #e71d36;
             font-size: 14px;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            font-weight: 600;
         }
         
         .mvp-feature-content p {
             color: #f6f5f5;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 13px;
+            line-height: 1.5;
+            opacity: 0.85;
         }
         
         .highlight {
-            background: rgba(231, 29, 54, 0.15);
-            border-left: 4px solid #e71d36;
-            padding: 12px 15px;
-            margin-bottom: 15px;
+            background: rgba(231, 29, 54, 0.12);
+            border-left: 3px solid #e71d36;
+            padding: 16px 20px;
+            margin-bottom: 25px;
             border-radius: 4px;
         }
         
@@ -398,13 +419,14 @@
         .highlight span {
             color: #f6f5f5;
             font-size: 14px;
+            opacity: 0.9;
         }
         
         .highlight-center {
-            background: rgba(231, 29, 54, 0.15);
-            border: 1px solid rgba(231, 29, 54, 0.4);
-            padding: 15px 25px;
-            margin-bottom: 20px;
+            background: rgba(231, 29, 54, 0.12);
+            border: 1px solid rgba(231, 29, 54, 0.3);
+            padding: 18px 30px;
+            margin-bottom: 25px;
             border-radius: 6px;
             text-align: center;
         }
@@ -416,11 +438,12 @@
         .highlight-center span {
             color: #f6f5f5;
             font-size: 15px;
+            opacity: 0.9;
         }
         
         .comparison-column {
-            background: rgba(246, 245, 245, 0.05);
-            padding: 20px;
+            background: rgba(246, 245, 245, 0.03);
+            padding: 25px;
             border-radius: 6px;
         }
         
@@ -430,8 +453,9 @@
         
         .comparison-column h3 {
             color: #e71d36;
-            margin-bottom: 15px;
-            font-size: 16px;
+            margin-bottom: 18px;
+            font-size: 15px;
+            font-weight: 600;
         }
         
         .comparison-column ul {
@@ -440,10 +464,11 @@
         }
         
         .comparison-column ul li {
-            padding: 8px 0;
-            font-size: 13px;
-            border-bottom: 1px solid rgba(246, 245, 245, 0.1);
+            padding: 10px 0;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(246, 245, 245, 0.08);
             color: #f6f5f5;
+            opacity: 0.9;
         }
         
         .comparison-column ul li:last-child {
@@ -452,26 +477,28 @@
 
         .keyboard-hint {
             position: fixed;
-            top: 15px;
-            right: 15px;
-            background: rgba(246, 245, 245, 0.1);
+            top: 20px;
+            right: 20px;
+            background: rgba(246, 245, 245, 0.08);
             color: #f6f5f5;
             padding: 8px 12px;
             border-radius: 4px;
             font-size: 11px;
             z-index: 1000;
+            opacity: 0.6;
         }
         
         .content-wrapper {
             flex: 1;
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
     <div class="keyboard-hint">
-        ↑ ↓ для навигации
+        ↑ ↓ навигация
     </div>
     
     <div class="slide-counter">
@@ -499,7 +526,6 @@
         <!-- СЛАЙД 2: Executive Summary -->
         <div class="slide">
             <h2>Executive Summary</h2>
-            <p class="subtitle">Резюме для руководства</p>
             
             <div class="problem-solution">
                 <div class="box">
@@ -526,19 +552,19 @@
 
         <!-- СЛАЙД 3: Решение -->
         <div class="slide">
-            <h2>Личный кабинет и Мобильное приложение — Единая цифровая точка контакта с клиентом</h2>
+            <h2>Единая цифровая точка контакта с клиентом</h2>
             
             <div class="content-wrapper">
                 <div class="concept-visual">
                     <h3>Концепция</h3>
-                    <p>ЛК и Мобильное приложение — это цифровой <strong style="color: #e71d36;">"гараж"</strong> и <strong style="color: #e71d36;">"консьерж-сервис"</strong> для нашего клиента. Единое окно для всех его потребностей, связанных с автомобилем.</p>
+                    <p>ЛК и Мобильное приложение — это цифровой <strong style="color: #e71d36;">"гараж"</strong> и <strong style="color: #e71d36;">"консьерж-сервис"</strong> для клиента. Единое окно для всех потребностей, связанных с автомобилем.</p>
                 </div>
                 
                 <div class="highlight-center">
                     <strong>Ключевая идея: </strong><span>Мы перестаем быть просто продавцом и становимся партнером клиента на всем пути владения автомобилем.</span>
                 </div>
                 
-                <div class="two-column" style="flex: 1;">
+                <div class="two-column">
                     <div class="comparison-column">
                         <h3>До запуска</h3>
                         <ul>
@@ -565,27 +591,27 @@
 
         <!-- СЛАЙД 4: Ценность для БИЗНЕСА -->
         <div class="slide">
-            <h2>Ценность для БИЗНЕСА</h2>
+            <h2>Ценность для бизнеса</h2>
             
             <div class="benefits-grid">
                 <div class="benefit-item">
-                    <h3>📈 Рост LTV (Lifetime Value)</h3>
+                    <h3>📈 Рост LTV</h3>
                     <ul>
-                        <li><strong>Удержание в сервисе:</strong> Удобная онлайн-запись и история обслуживания</li>
-                        <li><strong>Cross-sell/Up-sell:</strong> Продажа запчастей, аксессуаров, гарантии, страховок</li>
+                        <li><strong>Удержание в сервисе:</strong> удобная онлайн-запись и история обслуживания</li>
+                        <li><strong>Cross-sell/Up-sell:</strong> продажа запчастей, аксессуаров, гарантии, страховок</li>
                     </ul>
                 </div>
                 
                 <div class="benefit-item">
                     <h3>💰 Снижение OPEX</h3>
                     <ul>
-                        <li><strong>Автоматизация:</strong> Клиент сам записывается на сервис 24/7</li>
-                        <li><strong>Самообслуживание:</strong> История ТО, статус заказа без обращений в ДЦ</li>
+                        <li><strong>Автоматизация:</strong> клиент сам записывается на сервис 24/7</li>
+                        <li><strong>Самообслуживание:</strong> история ТО, статус заказа без обращений в ДЦ</li>
                     </ul>
                 </div>
                 
                 <div class="benefit-item">
-                    <h3>📊 Сбор и монетизация данных</h3>
+                    <h3>📊 Монетизация данных</h3>
                     <ul>
                         <li>360-градусный профиль клиента</li>
                         <li>Прогнозирование потребностей</li>
@@ -596,7 +622,7 @@
                 <div class="benefit-item">
                     <h3>🏆 Конкурентное преимущество</h3>
                     <ul>
-                        <li>Повышение уровня сервиса до уровня премиум-брендов</li>
+                        <li>Уровень сервиса премиум-брендов</li>
                         <li>Укрепление позиции на рынке</li>
                     </ul>
                 </div>
@@ -607,8 +633,7 @@
 
         <!-- СЛАЙД 5: Ценность для КЛИЕНТА -->
         <div class="slide">
-            <h2>Ценность для КЛИЕНТА</h2>
-            <p class="subtitle">Почему клиенты будут пользоваться Личным кабинетом и Мобильным приложением</p>
+            <h2>Ценность для клиента</h2>
             
             <div class="value-grid">
                 <div class="value-card">
@@ -626,25 +651,25 @@
                 <div class="value-card">
                     <div class="value-icon">⚡</div>
                     <h4>Экономия времени</h4>
-                    <p>Онлайн-запись на ТО/ремонт в несколько кликов. Без звонков и ожидания.</p>
+                    <p>Онлайн-запись на ТО и ремонт в несколько кликов без звонков и ожидания.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🎯</div>
                     <h4>Контроль</h4>
-                    <p>Уведомления о ТО, статусе ремонта, спецпредложениях.</p>
+                    <p>Своевременные уведомления о ТО, статусе ремонта и специальных предложениях.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🎁</div>
                     <h4>Персонализация</h4>
-                    <p>Предложения под автомобиль и стиль вождения. Без спама.</p>
+                    <p>Релевантные предложения, подобранные под конкретный автомобиль клиента.</p>
                 </div>
                 
                 <div class="value-card">
                     <div class="value-icon">🔐</div>
                     <h4>Безопасность</h4>
-                    <p>Данные защищены. Доступ только через авторизацию.</p>
+                    <p>Надежная защита персональных данных и двухфакторная аутентификация.</p>
                 </div>
             </div>
             
@@ -656,31 +681,31 @@
             <h2>Функционал MVP</h2>
             
             <div class="highlight">
-                <strong>Цель: </strong><span>Быстро запустить продукт, дать ключевую ценность клиенту. </span><strong>Срок: </strong><span>3-4 месяца</span>
+                <strong>Цель: </strong><span>быстро запустить продукт и дать ключевую ценность клиенту. </span><strong>Срок: </strong><span>3-4 месяца</span>
             </div>
             
             <div class="mvp-grid">
                 <div class="mvp-feature">
                     <div class="mvp-number">1</div>
                     <div class="mvp-feature-content">
-                        <h4>Каталог авто, Расчет кредита, Trade-in</h4>
-                        <p>Просмотр авто в наличии, фильтры по параметрам. Онлайн-калькулятор кредита и оценка Trade-in.</p>
+                        <h4>Каталог авто, Кредит, Trade-in</h4>
+                        <p>Просмотр авто в наличии с фильтрами. Онлайн-калькулятор кредита и оценка Trade-in.</p>
                     </div>
                 </div>
                 
                 <div class="mvp-feature">
                     <div class="mvp-number">2</div>
                     <div class="mvp-feature-content">
-                        <h4>Регистрация / Авторизация</h4>
-                        <p>По телефону / email, персональные данные. Автоматическое добавление данных по VIN, если клиент в базе.</p>
+                        <h4>Регистрация и авторизация</h4>
+                        <p>По телефону или email. Автоматическое добавление данных по VIN из базы.</p>
                     </div>
                 </div>
                 
                 <div class="mvp-feature">
                     <div class="mvp-number">3</div>
                     <div class="mvp-feature-content">
-                        <h4>"Мой гараж"</h4>
-                        <p>Карточка авто (марка, модель, VIN, год). Информация о гарантии.</p>
+                        <h4>Мой гараж</h4>
+                        <p>Карточка авто с данными о модели, VIN, годе выпуска и гарантии.</p>
                     </div>
                 </div>
                 
@@ -688,7 +713,7 @@
                     <div class="mvp-number">4</div>
                     <div class="mvp-feature-content">
                         <h4>История обслуживания</h4>
-                        <p>Заказ-наряды (дата, пробег, работы, стоимость). Интеграция с CRM.</p>
+                        <p>Заказ-наряды с датой, пробегом, работами и стоимостью. Интеграция с CRM.</p>
                     </div>
                 </div>
                 
@@ -696,7 +721,7 @@
                     <div class="mvp-number">5</div>
                     <div class="mvp-feature-content">
                         <h4>Онлайн-запись на сервис</h4>
-                        <p>Выбор ДЦ, даты/времени, типа работ с указанием причины.</p>
+                        <p>Выбор дилерского центра, даты, времени и типа работ.</p>
                     </div>
                 </div>
                 
@@ -704,7 +729,7 @@
                     <div class="mvp-number">6</div>
                     <div class="mvp-feature-content">
                         <h4>Система уведомлений</h4>
-                        <p>Напоминания о предстоящем ТО. Подтверждение записи на сервис. Push и Email-уведомления.</p>
+                        <p>Напоминания о ТО, подтверждение записи. Push и Email.</p>
                     </div>
                 </div>
             </div>
@@ -714,8 +739,7 @@
 
         <!-- СЛАЙД 7: Бэклог и дорожная карта -->
         <div class="slide">
-            <h2>Бэклог и дорожная карта продукта</h2>
-            <p class="subtitle">Roadmap на 2 квартала после запуска MVP</p>
+            <h2>Дорожная карта продукта</h2>
             
             <div class="timeline-horizontal">
                 <div class="timeline-content">
@@ -734,9 +758,9 @@
                 <div class="timeline-content">
                     <div class="timeline-quarter">Q2 — Стратегия</div>
                     <ul>
-                        <li>Программы <strong>лояльности</strong> (бонусы, скидки)</li>
+                        <li>Программы <strong>лояльности</strong></li>
                         <li>Интеграция со <strong>страховыми партнерами</strong></li>
-                        <li><strong>Умные рекомендации</strong> (телематика)</li>
+                        <li><strong>Умные рекомендации</strong></li>
                         <li><strong>Хранилище документов</strong></li>
                         <li><strong>Рекомендации по эксплуатации</strong></li>
                         <li><strong>Чат-бот</strong></li>
