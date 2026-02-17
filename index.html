@@ -40,17 +40,17 @@
         }
         
         h1 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 42px;
             margin-bottom: 30px;
             line-height: 1.2;
         }
         
         h2 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 32px;
             margin-bottom: 25px;
-            border-bottom: 3px solid #C41E3A;
+            border-bottom: 3px solid #E30613;
             padding-bottom: 10px;
         }
         
@@ -68,22 +68,22 @@
         
         .problem-solution {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
             margin-top: 40px;
         }
         
         .box {
             background: #f9f9f9;
-            padding: 25px;
-            border-left: 5px solid #C41E3A;
+            padding: 30px;
+            border-left: 5px solid #E30613;
             border-radius: 5px;
         }
         
         .box h3 {
-            color: #C41E3A;
-            font-size: 18px;
-            margin-bottom: 15px;
+            color: #E30613;
+            font-size: 20px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
         
@@ -93,22 +93,23 @@
         }
         
         .box ul li {
-            padding: 8px 0;
+            padding: 12px 0;
             padding-left: 25px;
             position: relative;
             line-height: 1.6;
+            font-size: 16px;
         }
         
         .box ul li:before {
             content: "→";
             position: absolute;
             left: 0;
-            color: #C41E3A;
+            color: #E30613;
             font-weight: bold;
         }
         
         .benefit-item {
-            background: linear-gradient(135deg, #C41E3A 0%, #8B1428 100%);
+            background: linear-gradient(135deg, #E30613 0%, #B8050F 100%);
             color: white;
             padding: 30px;
             margin: 20px 0;
@@ -150,14 +151,14 @@
         
         .feature-card {
             background: #f9f9f9;
-            border: 2px solid #C41E3A;
+            border: 2px solid #E30613;
             padding: 25px;
             border-radius: 8px;
             margin: 15px 0;
         }
         
         .feature-card h4 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 20px;
             margin-bottom: 12px;
         }
@@ -180,7 +181,7 @@
             top: 0;
             bottom: 0;
             width: 4px;
-            background: #C41E3A;
+            background: #E30613;
             transform: translateX(-50%);
         }
         
@@ -202,14 +203,14 @@
         
         .timeline-content {
             background: white;
-            border: 3px solid #C41E3A;
+            border: 3px solid #E30613;
             padding: 20px;
             border-radius: 8px;
             position: relative;
         }
         
         .timeline-quarter {
-            background: #C41E3A;
+            background: #E30613;
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -226,11 +227,11 @@
         
         .timeline-content ul li {
             margin: 8px 0;
-            color: #333;
+            color: #1A1A1A;
         }
         
         .concept-visual {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            background: linear-gradient(135deg, #1A1A1A 0%, #333 100%);
             color: white;
             padding: 40px;
             border-radius: 10px;
@@ -239,7 +240,7 @@
         }
         
         .concept-visual h3 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 28px;
             margin-bottom: 20px;
         }
@@ -258,13 +259,13 @@
         
         .value-card {
             background: white;
-            border: 3px solid #C41E3A;
+            border: 3px solid #E30613;
             padding: 25px;
             border-radius: 8px;
         }
         
         .value-card h4 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 20px;
             margin-bottom: 15px;
         }
@@ -275,7 +276,7 @@
         }
         
         .mvp-number {
-            background: #C41E3A;
+            background: #E30613;
             color: white;
             width: 40px;
             height: 40px;
@@ -286,6 +287,7 @@
             font-weight: bold;
             margin-right: 15px;
             font-size: 20px;
+            flex-shrink: 0;
         }
         
         .mvp-feature {
@@ -298,21 +300,53 @@
         }
         
         .mvp-feature-content h4 {
-            color: #C41E3A;
+            color: #E30613;
             font-size: 20px;
             margin-bottom: 10px;
         }
         
         .highlight {
-            background: #FFF3CD;
-            border-left: 5px solid #C41E3A;
+            background: #FEF3F4;
+            border-left: 5px solid #E30613;
             padding: 20px;
             margin: 20px 0;
             border-radius: 5px;
         }
         
         .highlight strong {
-            color: #C41E3A;
+            color: #E30613;
+        }
+        
+        .comparison-column {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .comparison-column.after {
+            background: #FEF3F4;
+            border: 2px solid #E30613;
+        }
+        
+        .comparison-column h3 {
+            color: #E30613;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        .comparison-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .comparison-column ul li {
+            padding: 12px 0;
+            font-size: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-column ul li:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
@@ -328,10 +362,10 @@
                 <div class="box">
                     <h3>Проблема</h3>
                     <ul>
-                        <li>Мы теряем связь с клиентом после продажи автомобиля</li>
+                        <li>Не потерять связь с клиентом после продажи автомобиля</li>
                         <li>Упущенная выгода в сервисном обслуживании</li>
                         <li>Низкий LTV клиента</li>
-                        <li>Высокие операционные издержки на поддержку</li>
+                        <li>Дополнительные операционные издержки на поддержку колл-центра</li>
                     </ul>
                 </div>
                 
@@ -339,17 +373,7 @@
                     <h3>Решение</h3>
                     <ul>
                         <li>Запуск Личного кабинета (ЛК)</li>
-                        <li>Единая цифровая точка контакта</li>
                         <li>Сопровождение клиента на всем жизненном цикле</li>
-                    </ul>
-                </div>
-                
-                <div class="box">
-                    <h3>Ключевые выгоды</h3>
-                    <ul>
-                        <li><strong>Рост выручки:</strong> +15-20% LTV за 2 года</li>
-                        <li><strong>Снижение издержек:</strong> -25-30% нагрузки на колл-центр</li>
-                        <li><strong>Стратегический актив:</strong> Уникальные данные о клиентах</li>
                     </ul>
                 </div>
             </div>
@@ -359,7 +383,7 @@
 
         <!-- СЛАЙД 4: Решение -->
         <div class="slide">
-            <h2>Решение: Личный кабинет — наш цифровой актив</h2>
+            <h2>Личный кабинет — Единая цифровая точка контакта с клиентом</h2>
             <p class="subtitle">Превращаем разового покупателя в лояльного клиента на всю жизнь</p>
             
             <div class="concept-visual">
@@ -373,22 +397,22 @@
             </div>
             
             <div class="two-column" style="margin-top: 40px;">
-                <div>
-                    <h3 style="color: #C41E3A;">До запуска ЛК</h3>
-                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
-                        <li style="padding: 10px 0; color: #666;">❌ Разрозненные данные</li>
-                        <li style="padding: 10px 0; color: #666;">❌ Нет прямой связи с клиентом</li>
-                        <li style="padding: 10px 0; color: #666;">❌ Высокая нагрузка на операторов</li>
-                        <li style="padding: 10px 0; color: #666;">❌ Упущенные возможности допродаж</li>
+                <div class="comparison-column">
+                    <h3>До запуска ЛК</h3>
+                    <ul>
+                        <li>❌ Мало данных о клиенте</li>
+                        <li>❌ Нет прямой связи с клиентом</li>
+                        <li>❌ Нагрузка на операторов</li>
+                        <li>❌ Упущенные возможности допродаж</li>
                     </ul>
                 </div>
-                <div>
-                    <h3 style="color: #C41E3A;">После запуска ЛК</h3>
-                    <ul style="list-style: none; padding: 0; margin-top: 20px;">
-                        <li style="padding: 10px 0; color: #333;">✓ Единая база клиентов</li>
-                        <li style="padding: 10px 0; color: #333;">✓ Постоянный контакт 24/7</li>
-                        <li style="padding: 10px 0; color: #333;">✓ Автоматизация процессов</li>
-                        <li style="padding: 10px 0; color: #333;">✓ Персонализированные предложения</li>
+                <div class="comparison-column after">
+                    <h3>После запуска ЛК</h3>
+                    <ul>
+                        <li>✓ Сформирован цифровой профиль клиента</li>
+                        <li>✓ Постоянный контакт 24/7</li>
+                        <li>✓ Автоматизация процессов</li>
+                        <li>✓ Персонализированные предложения</li>
                     </ul>
                 </div>
             </div>
@@ -412,7 +436,7 @@
                 <h3>💰 Снижение операционных затрат (OPEX)</h3>
                 <ul>
                     <li><strong>Автоматизация:</strong> Клиент сам записывается на сервис 24/7, сокращая нагрузку на операторов</li>
-                    <li><strong>Самообслуживание:</strong> Клиент сам находит информацию (история ТО, статус заказа), не звоня в ДЦ</li>
+                    <li><strong>Самообслуживание:</strong> Клиент сам находит информацию (история ТО, статус заказа) без обращений в ДЦ</li>
                 </ul>
             </div>
             
